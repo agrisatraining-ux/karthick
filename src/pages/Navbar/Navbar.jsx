@@ -1,18 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Navbar.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io";
 import relogo from '../../assets/relogo.jpeg';
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-    const phoneNumber = "919840600638"; // your WhatsApp number with country code
+    const phoneNumber = "919840600638";
     const message = "Hi, I am interested in your services!";
 
     const [menuOpen, setMenuOpen] = useState(false);
     const menuRef = useRef(null);
 
-    // Close menu if clicked outside
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -48,15 +47,14 @@ const Navbar = () => {
             </div>
 
             <div className="navright">
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to="/work">Workshop</Link>
-                <Link to='/gallery'>Gallery</Link>
-                <Link to="/Contact">Contact</Link>
+                <NavLink to='/' end>Home</NavLink>
+                <NavLink to='/about'>About</NavLink>
+                <NavLink to="/work">Workshop</NavLink>
+                <NavLink to='/gallery'>Gallery</NavLink>
+                <NavLink to="/Contact">Contact</NavLink>
             </div>
 
             <div className="navhalf">
-                {/* Mobile Menu Button */}
                 <div className="navmenu">
                     <button onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -67,15 +65,13 @@ const Navbar = () => {
                   <>
                     <div className="mobileinside"> </div>
                     <div className="mobilemenu" ref={menuRef}>
-                        
-                        <Link className="mobilelink" to='/' onClick={() => setMenuOpen(false)}>Home</Link>
-                        <Link className="mobilelink" to='/about' onClick={() => setMenuOpen(false)}>About</Link>
-                        <Link className="mobilelink" to='/work' onClick={() => setMenuOpen(false)}>Workshop</Link>
-                        <Link className="mobilelink" to='/gallery' onClick={() => setMenuOpen(false)}>Gallery</Link>
-                        <Link className="mobilelink" to='/Contact' onClick={() => setMenuOpen(false)}>Contact</Link>
+                        <NavLink className="mobilelink" to='/' end onClick={() => setMenuOpen(false)}>Home</NavLink>
+                        <NavLink className="mobilelink" to='/about' onClick={() => setMenuOpen(false)}>About</NavLink>
+                        <NavLink className="mobilelink" to='/work' onClick={() => setMenuOpen(false)}>Workshop</NavLink>
+                        <NavLink className="mobilelink" to='/gallery' onClick={() => setMenuOpen(false)}>Gallery</NavLink>
+                        <NavLink className="mobilelink" to='/Contact' onClick={() => setMenuOpen(false)}>Contact</NavLink>
                     </div>
-                  
-                   </>
+                  </>
                 )}
 
                 <div className="navdownload">

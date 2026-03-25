@@ -86,6 +86,22 @@
     width: 100%;
 }
 
+/* Active page highlight */
+.navright a.active {
+    color: var(--text-main);
+}
+
+.navright a.active::after {
+    width: 100%;
+    background-color: var(--accent-gold);
+}
+
+.mobilelink.active {
+    color: var(--accent-gold);
+    padding-left: 10px;
+    border-left: 3px solid var(--accent-gold);
+}
+
 /* Download Profile Button */
 .navdownload {
     margin-left: 20px;
