@@ -35,6 +35,7 @@ const Navbar = () => {
     }, [menuOpen]);
 
     return (
+        <>
         <div className="overallnav">
             <div className="navalleft">
                 <div className="navleft">
@@ -81,17 +82,19 @@ const Navbar = () => {
                     <Link to="/profile">View Profile</Link>
                 </div>
             </div>
-
-            <div className="whatsapp">
-                <a
-                    href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <IoLogoWhatsapp color="green" size={40} />
-                </a>
-            </div>
         </div>
+
+        {/* WhatsApp float button — outside nav so backdrop-filter doesn't trap fixed position */}
+        <div className="whatsapp">
+            <a
+                href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <IoLogoWhatsapp color="white" size={32} />
+            </a>
+        </div>
+        </>
     )
 }
 
