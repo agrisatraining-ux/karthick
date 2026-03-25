@@ -1,445 +1,372 @@
-  *{
-      padding: 0px;
-      margin: 0px;
-      box-sizing: border-box;
-  }
-  /* overall-contact */
-  .title-con{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      gap: 30px;
-      height: 40vh;
-      background-color: rgb(186, 215, 223);
-      flex-direction: column;
-      
-  }
-  .title-con h1{
-      font-size: 50px;
-      font-family:sans-serif;
-  }
-  .title-con-p{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 85%;
-      font-size: 20px;
-      font-family:sans-serif;
-  }
-  .input-cont{
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 50px;
-      min-height: 100vh;
-  }
-  .input-title,.cont-info {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-      align-items: center;
-      gap: 10px;
-      padding: 20px;
-  }
-  .input-cont-p,.cont-info-p{
-      font-size: 20px;
-      width: 85%;
-       display: flex;
-      justify-content: center;
-     align-items: center;
-  }   
- 
-  .Input{
-      background-color: rgb(255, 255, 255);
-      border-radius:10px;
-      width: 70%;
-      padding: 25px;
-      font-family: sans-serif;
-      box-shadow: 0px 0px 7px 1px rgba(000, 000, 000, 0.6);
-  }
-  label, input,select{
-      width: 100%;
-      height: 50px;
-      margin-top: 15px;
-      margin-bottom: 10px;
-      padding: 5px;
-      border-radius: 5px;
-      border: none;
-  }
-  input{
-      background-color: rgba(214, 202, 202,0.3);
-      border: 1px solid black;
-  }
-  textarea{
-      height: 120px;
-      width: 100%;
-      margin-top: 15px;
-      resize: vertical;
-      border-radius: 5px;
-      padding: 7px;
-  }
-  .in-put-button{
-      width: 100%;
-      padding: 12px;
-      border-radius: 5px;
-      font-size: 22px;
-      border: none;
-      margin-top: 15px;
-      background-color: rgb(90, 0, 150);
-      color: white;
-  }
-  .in-put-button:hover{
-      background-color: rgb(30, 30, 197);
-  }
-  /* conatct info */
-      
-  .con-details{
-      min-height: 70vh;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      gap: 40px;
-      padding: 25px;
-  }
-  .overall-cont i{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      color: purple;
-      background-color: rgba(214, 202, 202,0.5);
-      padding: 17px;
-      width: 50px;
-      height: 50px;
-      font-size: 23px;
-  }
-  .cards, .office-hours{
-      min-height: 200px;
-      width: 45%;
-      background-color: whitesmoke;
-      box-shadow: 0px 3px 8px 0px rgb(82, 80, 80);
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      gap:30px;
-      border-radius: 5px;
-      padding: 10px;
-      font-family: sans-serif;
-  }
-  .our-locat{
-        min-height: 200px;
-      width: 45%;
-      background-color: whitesmoke;
-      box-shadow: 0px 3px 8px 0px rgb(82, 80, 80);
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      gap:30px;
-      border-radius: 5px;
-      padding: 10px;
-      font-family: sans-serif;
-  }
-  .content{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-  }
-  .cardA{
-      color: purple;
-      text-decoration: none;
-  }
-  .CAR{
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      gap: 30px;
-  }
-  .icons-with i{
-      background-color: black;
-      color: white;
-  }
-  .icons{
-      font-size: 23px;
-      color: purple;
-      background-color: rgba(214, 202, 202,0.8);
-      /* border: 1px solid black; */
-      border-radius: 50%;
-      padding: 17px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-  }
-  .Our{
-      display: flex;
-     
-      justify-content:center;
-      align-items: center;
-      gap: 20px;
-      padding: 10px;
-      font-family: sans-serif;
-  }
-  .icon span{
-      font-size: 23px;
-      color: purple;
-      background-color: rgba(214, 202, 202,0.4);
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .address{
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-  }
-  /* -----WithUs---- */
-  .withus{
-      height: 50vh;
-      width: 100%;
-      background-color: rgb(186, 215, 223);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
-      font-family: sans-serif;
-  }
-  .withus h1{
-      font-size: 55px;
-  }
-  .withus-p{
-      font-size: 27px;
-      width: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .ico{
-      display: flex;
-      gap: 20px;
-  }
-  .ready{
-      min-height: 50vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap:30px;
-      font-family: sans-serif;
-      color: white;
-      background: linear-gradient(90deg, #000000 0%, #800080 100%);
-    }
-  .ready h1{
-      font-size: 50px;
-  }
-  .ready-p{
-      width: 75%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 23px;
-      color: white;
-  }
+/* Premium Contact Page Styles */
 
-  .ready-p p{
-      color: rgba(214, 202, 202,0.8);
-  }
-  .but button{
-      border-radius: 7px;
-      padding: 15px 35px;
-      border:none;
-      font-size: 20px;
-      background-color: purple;
-      color: white;
-  }
-  .but button:hover{
-      background-color: rgb(19, 19, 255);
-  }
+.overall-cont {
+    width: 100%;
+    color: var(--text-main);
+}
 
-  /* ========================= */
-  /* 📱 Responsive Media Queries */
-  /* ========================= */
+/* -------------------------------------
+   TITLE SECTION
+------------------------------------- */
+.title-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    min-height: 40vh;
+    padding: 60px 5%;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(15, 12, 41, 0) 100%);
+    border-bottom: 1px solid var(--glass-border);
+}
 
-  /* Tablet screens (max-width: 992px) */
-  @media (max-width: 992px) {
-    
-    .title-con h1 {
-      font-size: 38px;
-    }
+.title-con h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-main);
+    background: linear-gradient(90deg, #f8fafc, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-    .title-con-p {
-      width: 90%;
-      font-size: 18px;
-      text-align: center;
-    }
+.title-con-p {
+    width: 100%;
+    max-width: 800px;
+}
 
-    .input-cont {
-      gap: 30px;
-      padding: 10px;
-    }
+.title-con-p p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
 
-    .Input {
-      width: 90%;
-      padding: 20px;
-    }
+/* -------------------------------------
+   FORM SECTION
+------------------------------------- */
+.input-cont {
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
 
-    .con-details {
-      padding: 10px;
-      flex-direction: column;
-      gap: 30px;
-    }
-    .cont-info h1,.cont-info-p{
-      padding: 10px;
-    }
-    .cards, .office-hours, .our-locat {
-      width: 80%;
-    }
-    .withus{
-      padding: 10px;
-    }
-    .withus h1 {
-      font-size: 40px;
-      text-align: center;
-    }
+.input-title {
+    text-align: center;
+}
 
-    .withus-p {
-      width: 90%;
-      font-size: 20px;
-      text-align: center;
-    }
-  .ready{
-      padding: 10px;
-  }
-    .ready h1 {
-      font-size: 40px;
-    }
+.input-title h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
 
-    .ready-p {
-      width: 90%;
-      font-size: 20px;
-      text-align: center;
-    }
-  }
+.input-cont-p p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
 
-  /* Mobile screens (max-width: 600px) */
-  @media (max-width: 600px) {
-    .title-con {
-      height: auto;
-      padding: 30px 15px;
-      gap: 15px;
-      text-align: center;
-    }
+.Input {
+    width: 100%;
+    max-width: 800px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+}
 
-    .title-con h1 {
-      font-size: 30px;
-    }
+/* Form Elements */
+label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
 
-    .title-con-p {
-      font-size: 16px;
-      width: 100%;
-    }
+input, textarea, select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
 
-    .input-cont {
-      padding: 10px;
-      min-height: auto;
-    }
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
 
-    .input-title h1 {
-      font-size: 24px;
-    }
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+}
 
-    .input-cont-p {
-      font-size: 16px;
-      width: 100%;
-    }
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
 
-    .Input {
-      width: 100%;
-      padding: 15px;
-    }
+/* Submit Button */
+.in-put-button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 30px;
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
 
-    label, input, textarea {
-      font-size: 14px;
-    }
+.in-put-button:hover:not(:disabled) {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
 
-    .in-put-button {
-      font-size: 18px;
-      padding: 10px;
-    }
+.in-put-button:disabled {
+    background: rgba(168, 85, 247, 0.5);
+    cursor: not-allowed;
+}
 
-    .con-details {
-      flex-direction: column;
-      align-items: stretch;
-      gap: 20px;
-    }
+/* -------------------------------------
+   CONTACT INFO SECTION
+------------------------------------- */
+.cont-info {
+    width: 100%;
+    padding: 60px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
 
-    .cards, .office-hours, .our-locat {
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 15px;
-    }
+.cont-info h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
 
-    .icons {
-      font-size: 20px;
-      padding: 12px;
-    }
+.cont-info-p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
 
-    .cardName {
-      font-size: 18px;
-    }
+.con-details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 
-    .cardPara {
-      font-size: 14px;
-    }
+.cards, .office-hours, .our-locat {
+    width: 350px;
+    max-width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--glass-shadow);
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
 
-    .cardA {
-      font-size: 14px;
-    }
+.cards:hover, .office-hours:hover, .our-locat:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.4);
+}
 
-    .withus h1 {
-      font-size: 28px;
-    }
+.icons, .icon span {
+    font-size: 2rem;
+    color: var(--accent-gold);
+    background: rgba(168, 85, 247, 0.15);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(168,85,247,0.3);
+    margin-bottom: 10px;
+}
 
-    .withus-p {
-      font-size: 16px;
-      width: 100%;
-    }
-  .ready{
-      padding: 10px;
-  }
-    .ready h1 {
-      font-size: 28px;
-    }
+.content, .address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-    .ready-p {
-      font-size: 16px;
-      width: 100%;
+.cardName, .address h2, .content h2 {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.cardPara, .address p, .content p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.cardA {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.cardA:hover {
+    color: var(--primary-hover);
+}
+
+/* CAR class inside map */
+.CAR, .Our {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* -------------------------------------
+   SOCIAL MEDIA SECTION
+------------------------------------- */
+.withus {
+    width: 100%;
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.withus h1 {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+}
+
+.withus-p p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+.ico {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.icons-with i {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    background: rgba(255,255,255,0.1);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--glass-border);
+}
+
+.icons-with i:hover {
+    background: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
+}
+
+/* -------------------------------------
+   READY TO START (CTA)
+------------------------------------- */
+.ready {
+    width: 100%;
+    padding: 80px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(15, 12, 41, 0) 100%);
+}
+
+.ready h1 {
+    font-size: 2.8rem;
+    color: var(--text-main);
+}
+
+.ready-p p {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+.but button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+}
+
+.but button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+}
+
+/* -------------------------------------
+   RESPONSIVE DESIGN
+------------------------------------- */
+@media (max-width: 900px) {
+    .title-con h1 { font-size: 2.5rem; }
+    .input-title h1, .cont-info h1 { font-size: 2.2rem; }
+    .withus h1 { font-size: 2.2rem; }
+    .ready h1 { font-size: 2.2rem; }
+    .Input { padding: 30px; }
+}
+
+@media (max-width: 600px) {
+    .title-con, .input-cont, .cont-info, .withus, .ready {
+        padding: 40px 5%;
     }
-    .Our,.CAR{
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-    }
-    .Our p,.CAR p{
-      font-size: 16px;
-    }
-    .Our h2{
-      font-size: 17px;
-    }
-    .but button {
-      font-size: 16px;
-      padding: 12px 25px;
-    }
-  }
+    .title-con h1 { font-size: 2rem; }
+    .title-con-p p { font-size: 1rem; }
+    .Input { padding: 20px; }
+    .in-put-button, .but button { width: 100%; }
+    .cards, .office-hours, .our-locat { padding: 20px; }
+    .ready h1 { font-size: 1.8rem; }
+}

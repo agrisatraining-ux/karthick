@@ -1,103 +1,112 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+/* Premium About Page Styles */
+
+.aboutoverall {
+    width: 100%;
+    color: var(--text-main);
 }
 
-:root {
-    --lightwhite: rgb(77, 75, 75);
-    --lightblue: rgb(231, 243, 247);
+.aboutoverall p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--text-muted);
 }
 
-p {
-    line-height: 28px;
-    font-size: 20px;
-    color: var(--lightwhite);
-}
-
-button:hover{
-    background-color: blue;
-    color: white;
-}
-
+/* -------------------------------------
+   HEADER SECTION
+------------------------------------- */
 .aboutheader {
     width: 100%;
-    height: 50vh;
-    background-color: var(--lightblue);
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     text-align: center;
-    padding: 20px 5%;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1) 0%, rgba(15, 12, 41, 0) 100%);
+    border-bottom: 1px solid var(--glass-border);
 }
 
-.aboutheader h1::first-letter{
+.aboutheader h1 {
     font-size: 3rem;
-    font-weight: 600;
-    line-height: 1;
-   
+    font-weight: 700;
+    color: var(--text-main);
+    background: linear-gradient(90deg, #f8fafc, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.aboutvideo{
+.aboutheader p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--accent-gold);
+    max-width: 800px;
+}
+
+/* -------------------------------------
+   VIDEO SECTION
+------------------------------------- */
+.aboutvideo {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 30px;
+    padding: 60px 20px;
 }
 
+.aboutvideo iframe {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    border: 1px solid var(--glass-border);
+    max-width: 100%;
+    width: 800px;
+    height: 450px;
+}
 
+/* -------------------------------------
+   COMPANY OVERVIEW
+------------------------------------- */
 .aboutcomp {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-    padding: 30px 6%;
+    padding: 60px 10%;
+    text-align: center;
+    align-items: center;
 }
 
 .aboutcomp h1 {
-    color: purple;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-figure {
-    text-align: center;
-    margin: 20px;
-}
-
-.figimg{
-
-    padding: 20px;
-    background-color:whitesmoke;
-   
-    border-radius: 10px;
-    border: none;
-}
-
-figcaption {
- 
-    font-size: 30px;
-    color: gray;
-    padding-top: 20px;
-    font-weight: 400;
+.aboutcomp p {
+    max-width: 900px;
+    margin-bottom: 15px;
 }
 
 .aboutcomp-img {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    margin-top: 40px;
 }
 
 .aboutcomp-img img {
-    width: 100%;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
     object-fit: contain;
-    
+    border-radius: 15px;
+    filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.2));
 }
 
+/* -------------------------------------
+   VISION & MISSION
+------------------------------------- */
 .aboutvision {
     width: 100%;
     display: flex;
@@ -105,209 +114,285 @@ figcaption {
     gap: 40px;
     justify-content: center;
     align-items: center;
+    padding: 60px 5%;
 }
 
 .aboutvisionbox {
-    width: 80%;
-    padding: 40px 30px;
-    background-color: whitesmoke;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
+    text-align: center;
 }
 
-
-
 .aboutvisionbox h1 {
-    padding-bottom: 20px;
-    color: purple;
+    color: var(--accent-gold);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------
+   CORE VALUES
+------------------------------------- */
+.aboutcorevalue {
+    width: 100%;
 }
 
 .aboutcorehead {
     text-align: center;
-    padding: 40px 7%;
-    width: 100%;
+    padding: 60px 10% 20px 10%;
+}
 
+.aboutcorehead h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
 .aboutcorevalbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px;
-    align-items: start;
-    padding: 30px 3%;
+    padding: 40px 5%;
 }
 
 .aboutcorebox {
-    padding: 15px;
-    width: 400px;
-    height: 300px;
-    background-color: whitesmoke;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 350px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(10px);
     border-radius: 20px;
-
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
-
+    text-align: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
 }
 
-.aboutcorebox h1 {
-    font-size: 25px;
+.aboutcorebox:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .aboutcorebox span {
-    color: purple;
-    background-color: rgb(238, 229, 229);
+    color: var(--accent-gold);
+    background: rgba(168, 85, 247, 0.15);
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 20px rgba(168,85,247,0.3);
 }
 
+.aboutcorebox h1 {
+    font-size: 1.5rem;
+    color: var(--text-main);
+}
+
+/* -------------------------------------
+   FOUNDER SECTION
+------------------------------------- */
 .aboutceoimg {
     width: 100%;
-    padding: 20px;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
 
+.aboutceoimg figure {
+    text-align: center;
+    margin: 0;
+}
+
+.figimg {
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    display: inline-block;
 }
 
 .aboutceoimg img {
-    width: 700px;
-    height: 450px;
-    border-radius: 10px;
-    /* box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+}
 
+figcaption {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    padding-top: 20px;
+    line-height: 1.4;
+}
+
+figcaption strong {
+    color: var(--accent-gold);
 }
 
 .aboutowncontent {
-    background-color: rgb(231, 243, 247);
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.05) 0%, rgba(15, 12, 41, 0) 100%);
     display: flex;
     flex-direction: column;
-    padding: 30px 5%;
+    padding: 60px 10%;
     gap: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutowncontent h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
 }
 
 .aboutowncontent h2 {
-    color: purple;
+    color: var(--accent-gold);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
-
-/* Aboutachive  */
-
-
+/* ACHIEVEMENTS */
 .aboutachive {
     width: 100%;
-    padding: 20px;
-    background-color: whitesmoke;
+    max-width: 900px;
+    padding: 40px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: left;
+}
 
+.aboutachive h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutachive p {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .aboutachive ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-
+    gap: 15px;
+    list-style-position: inside;
 }
 
 .aboutachive ul li {
-    font-size: 18px;
-    margin-left: 30px;
-    color: var(--lightwhite);
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    padding-left: 10px;
 }
 
-
-.abouttrainer {
-    padding: 20px 5%;
+/* -------------------------------------
+   APPROACH & EXPERIENCE
+------------------------------------- */
+.abouttrainer, .aboutexper {
+    padding: 60px 10%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 20px;
 }
 
-.aboutexper {
-    padding: 10px 5%;
-
-}
-
-.aboutexper h1 {
-    color: purple;
+.abouttrainer h1, .aboutexper h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
-.aboutexper ul {
-    padding-left: 30px;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.aboutexper {
+    text-align: left;
+    align-items: flex-start;
 }
 
+.aboutexper ul {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--text-muted);
+}
+
+/* -------------------------------------
+   IMPACT NUMBERS
+------------------------------------- */
 .aboutimpnum {
     width: 100%;
-    padding: 30px 5%;
+    padding: 60px 5%;
     display: flex;
-
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    background: rgba(0,0,0,0.2);
 }
 
 .aboutimgbox {
-    width: 300px;
-    padding: 20px;
-    background-color: whitesmoke;
-
+    width: 250px;
+    padding: 30px 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.aboutimgbox:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
 }
 
 .aboutimgbox h1 {
-    color: purple;
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-@media screen and (min-width:600px) and (max-width:900px) {
-    .aboutceoimg img {
-        width: 550px;
-    }
-    .aboutcomp-img img {
-        height: unset;
-    }
-   
+.aboutimgbox p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-@media screen and (min-width:400px) and (max-width:600px) {
-    .aboutceoimg img {
-        width: 350px;
-    }
-    .aboutcomp-img img {
-        height: unset;
-    }
-     .aboutheader{
-        height: 40vh;
-    }
+/* -------------------------------------
+   RESPONSIVE
+------------------------------------- */
+@media screen and (max-width: 900px) {
+    .aboutheader h1 { font-size: 2.5rem; }
+    .aboutheader p { font-size: 1.2rem; }
+    .aboutvideo iframe { height: 350px; }
+    .aboutceoimg img { width: 100%; }
 }
 
-@media screen and (min-width:300px) and (max-width:400px) {
-    .aboutceoimg img {
-        width: 280px;
-    }
-    .aboutcomp-img img {
-        height: unset;
-    }
-     .aboutheader{
-        height: 40vh;
-    }
-    .aboutcorebox {
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
+    .aboutheader { padding: 40px 5%; min-height: 40vh; }
+    .aboutheader h1 { font-size: 2rem; }
+    .aboutvideo iframe { height: 250px; }
+    .aboutcomp h1, .aboutcorehead h1, .aboutowncontent h1, .abouttrainer h1, .aboutexper h1 { font-size: 2rem; }
+    .aboutvisionbox { padding: 30px 20px; }
+    .aboutcorebox { max-width: 100%; }
+    .aboutimgbox { width: 100%; max-width: 300px; }
 }

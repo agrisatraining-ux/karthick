@@ -1,417 +1,316 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+/* Home Page Premium Styles */
+.overallhome {
+    width: 100%;
+    color: var(--text-main);
+    overflow-x: hidden;
 }
 
-:root {
-    --lightwhite: rgb(77, 75, 75);
-    --lightblue: rgb(231, 243, 247);
+.overallhome p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 300;
 }
 
-.overallhome button:hover {
-    scale: 1.05;
-    transition: all .5s ease;
-}
-
-p {
-    line-height: 28px;
-    font-size: 20px;
-    color: var(--lightwhite);
-}
-
+/* -------------------------------------
+   HERO SECTION 
+------------------------------------- */
 .homeheader {
-    min-height: 50vh;
-    width: 100%;
-    background-color: var(--lightblue);
-    
-    background-size: cover;
-    background-position: center;
-   
-    display: flex;
-    flex-direction: column;
-  
-    gap: 15px;
-    padding: 2% 5%;
-    z-index: 0;
-}
-
-.homeheader h2 {
-    font-size: 35px;
-    color: purple;
-    padding-left: 5%;
-}
-
-.homeheader h1,
-.homeheader p {
-    padding-left: 5%;
-}
-
-.homeheader p {
-    
-    z-index: 1;
-    color: #000000;
-    width: 100%;
-    text-align: center;
-    padding: 3%;
-    animation-name: homesen;
-    animation-duration: 1.5s;
-    transition: all 1.5s ease;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-@keyframes homesen {
-    0% {
-        opacity: 0.5;
-        scale: 0;
-    }
-
-    100% {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-.homehead-btn {
-    display: flex;
-    gap: 30px;
-    padding-left: 5%;
-    z-index: 1;
-}
-
-.homehead-btn button {
-    background-color: transparent;
-    color: purple;
-    border-radius: 10px;
-    padding: 8px 30px;
-    bottom: 0;
-    border: 2px solid purple;
-    font-size: 17px;
-}
-
-.homehead-btn button+button {
-    background-color: purple;
-    color: white;
-}
-
-
-.homesecond-img {
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 5px;
-    
-}
-
-.homeslid{
-    width: 800px;
-    border-radius: 15px;
-    padding: 20px;
-}
-
-.homesecond-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-  
-}
-
-.homeourcompany {
+    min-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    align-items: center;
-    padding: 2% 10%;
-
+    padding: 6% 5%;
+    position: relative;
+    z-index: 1;
     text-align: center;
+    align-items: center;
 }
 
-.homeourcompany button {
-    border: 2px solid purple;
-    color: purple;
-    padding: 8px 20px;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 17px;
+.homeheader h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #f8fafc, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeUp 1s ease forwards;
 }
 
-.homeourcompany p {
-    font-size: 20px;
-    line-height: 27px;
+.homeheader h2 {
+    font-size: 3rem;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: fadeUp 1.2s ease forwards;
 }
 
+.homeheader p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    color: var(--text-muted);
+    animation: fadeUp 1.4s ease forwards;
+}
 
+.homehead-btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: fadeUp 1.6s ease forwards;
+}
 
-.homefounder {
+/* Hero Slider Area */
+.homesecond-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    animation: fadeIn 2s ease forwards;
+}
+
+.homeslid {
+    width: 900px;
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--glass-shadow);
+}
+
+.homesecond-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* -------------------------------------
+   ABOUT OUR COMPANY & FOUNDER
+------------------------------------- */
+.homeourcompany, .homefounder, .home-whatdo {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    gap: 30px;
-    padding: 2% 5%;
+    align-items: center;
+    padding: 5% 10%;
+    text-align: center;
+    gap: 20px;
+}
+
+.homeourcompany h1, .homefounder h1, .home-whatdo h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.homefounder {
+    align-items: flex-start;
+    text-align: left;
+    background: var(--glass-bg);
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    backdrop-filter: blur(5px);
 }
 
 .homefounder h2 {
-    color: purple;
+    color: var(--accent-gold);
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
-.homefounder button {
-    border: 2px solid purple;
-    color: purple;
-    padding: 8px 20px;
-    border-radius: 5px;
-    background-color: transparent;
-    font-size: 17px;
-}
-
-.homefounder p {
-    font-size: 20px;
-    line-height: 27px;
-}
-
+/* Founder Image */
 .homefounder-img {
-    height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 5px;
+    padding: 50px 20px;
 }
 
 .homefounder-img img {
-    width: 500px;
-    height: 100%;
+    width: 100%;
+    max-width: 600px;
     border-radius: 20px;
-    
-
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border: 2px solid var(--primary-color);
+    transition: transform 0.5s ease;
 }
 
-.home-whatdo {
-    padding: 30px 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: center;
+.homefounder-img img:hover {
+    transform: scale(1.02);
 }
 
-.home-whatdo p {
-    font-size: 20px;
-    line-height: 27px;
-}
-
+/* -------------------------------------
+   SERVICES SECTION
+------------------------------------- */
 .homeservice {
-    padding: 30px 3%;
+    padding: 60px 5%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 30px;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 .homeservicebox {
-    padding: 10px;
-    width: 380px;
-    height: 300px;
-    /* background-color: whitesmoke; */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    padding: 40px 30px;
+    width: 350px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    text-align: center;
+    gap: 20px;
+    transition: all 0.4s ease;
+    cursor: default;
+}
+
+.homeservicebox:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(168, 85, 247, 0.2);
+    background: rgba(255, 255, 255, 0.08); /* slightly lighter on hover */
 }
 
 .homeservicebox i {
-    font-size: 30px;
-    color: purple;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    height: 80px;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--lightblue);
+    background: rgba(168, 85, 247, 0.15); /* purple tint */
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(168,85,247,0.3);
+    transition: all 0.4s ease;
+}
+
+.homeservicebox:hover i {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 0 30px rgba(168,85,247,0.6);
+    transform: rotate(5deg) scale(1.1);
 }
 
 .homeservicebox h1 {
-    font-size: 25px;
+    font-size: 1.6rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.homeservicebox p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
 }
 
 .homeservicebtn {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 20px 0 60px 0;
 }
 
-.homeservicebtn button {
-    padding: 8px 30px;
-    background-color: purple;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.homevideo{
+/* -------------------------------------
+   VIDEO SECTION
+------------------------------------- */
+.homevideo {
     width: 100%;
-    padding: 40px 20px;
+    padding: 60px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.homevideo iframe {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    border: 1px solid var(--glass-border);
+    max-width: 100%;
+    width: 800px;
+    height: 450px;
+}
 
+/* -------------------------------------
+   FOOTER CALL TO ACTION 
+------------------------------------- */
 .homefooter {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 30px;
-    background: linear-gradient(90deg, #000000 0%, #800080 100%);
-    /* background: linear-gradient(227deg, #98609a,#9b559b,#9d499b,#a03e9c,#a3339d,#a5279d,#a81c9e,#aa109e,#ad059f); */
-    padding: 30px 5%;
-    color: white;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(15, 12, 41, 0) 100%);
+    border-top: 1px solid var(--glass-border);
+    padding: 80px 5%;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.homefooter h1 {
+    font-size: 2.8rem;
+    color: var(--accent-gold);
 }
 
 .homefooter p {
-    color: white;
+    max-width: 800px;
+    font-size: 1.2rem;
 }
 
 .homefooter-btn {
     display: flex;
-    gap: 40px;
-
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-
-.homefooter-btn button {
-    padding: 8px 30px;
-    background-color: purple;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
+/* -------------------------------------
+   ANIMATIONS
+------------------------------------- */
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
-.homefooter-btn button+button {
-    background-color: transparent;
-    border: 2px solid purple;
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
-@media screen and (min-width:600px) and (max-width:900px) {
-    .homeheader p{
-        font-size: 19px;
-    }
-    .homeheader p br{
-        display: none;
-    }
-    .homeheader h1{
-        font-size: 23px;
-    }
-    .homeslid {
-        width: 90%;
-    }
-    .homeourcompany{
-        padding: 2% 4%;
-    }
-    .homefounder-img{
-        height: 500px;
-    }
-    .homefounder-img img{
-        width: 400px;
-    }
+/* -------------------------------------
+   RESPONSIVE DESIGN
+------------------------------------- */
+@media screen and (max-width: 900px) {
+    .homeheader h1 { font-size: 2.5rem; }
+    .homeheader h2 { font-size: 2rem; }
+    .homeheader p { font-size: 1.1rem; }
+    .homefounder { align-items: center; text-align: center; }
+    .homeslid { width: 95%; }
+    .homevideo iframe { height: 350px; }
 }
 
-@media screen and (min-width:390px) and (max-width:600px) {
-    .homeheader p{
-        font-size: 19px;
-    }
-
-    .homeheader p br{
-        display: none;
-    }
-
-    .homeheader{
-        padding: 20px 2%;
-    }
-    .homeheader h1{
-        font-size: 20px;
-    }
-    .homeslid {
-        width: 90%;
-       
-    }
-    .homeourcompany{
-        padding: 2% 4%;
-    }
-    .homefounder-img{
-        height: 500px;
-    }
-    .homefounder-img img{
-        width: 380px;
-    }
-    .homehead-btn button{
-        padding: 8px 10px;
-    } 
-    .homeheader h2 {
-        font-size: 28px;
-    }
-    .homeourcompany p,.homefounder p,.home-whatdo p{
-        font-size: 19px;
-    }
-  
-    .homefooter-btn button{
-        padding: 8px 10px;
-    }
-}
-@media screen and (min-width:300px) and (max-width:390px) {
-    .homeheader p{
-        font-size: 15px;
-    }
-
-    .homeheader p br{
-        display: none;
-    }
-
-    .homeheader{
-        padding: 20px 2%;
-    }
-    .homeheader h1{
-        font-size: 20px;
-    }
-    .homeslid {
-        width: 90%;
-       
-    }
-    .homeourcompany{
-        padding: 2% 4%;
-    }
-    .homefounder-img{
-        height: 500px;
-    }
-    .homefounder-img img{
-        width: 300px;
-    }
-    .homehead-btn button{
-        padding: 8px 10px;
-        font-size: 14px;
-    } 
-    .homeheader h2 {
-        font-size: 28px;
-    }
-    .homeourcompany p,.homefounder p,.home-whatdo p{
-        font-size: 15px;
-    }
-  
-    .homefooter-btn button{
-        padding: 8px 5px;
-        font-size: 14px;
-    }
+@media screen and (max-width: 600px) {
+    .homeheader h1 { font-size: 2rem; }
+    .homeheader h2 { font-size: 1.6rem; }
+    .homehead-btn { flex-direction: column; width: 100%; align-items: center; }
+    .homefoot-btn section { flex-direction: column; }
+    .homeourcompany h1, .homefounder h1, .home-whatdo h1 { font-size: 2rem; }
+    .homefooter h1 { font-size: 2rem; }
+    .homeservicebox { width: 100%; max-width: 400px; }
+    .homevideo iframe { height: 250px; }
 }

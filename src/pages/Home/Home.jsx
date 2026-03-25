@@ -45,8 +45,8 @@ const Home = () => {
                 <h2>Innovation</h2>
                 <p> Unlock your potential with immersive workshops designed to <br /> inspire, empower, and transform your journey.</p>
                 <div className="homehead-btn">
-                    <button onClick={() => navigate("/about")} >learn More</button>
-                    <button onClick={() => navigate("/work")} >Explore workshop &nbsp; &rarr;</button>
+                    <button className="btn-outline-premium" onClick={() => navigate("/about")} >Learn More</button>
+                    <button className="btn-premium" onClick={() => navigate("/work")} >Explore workshop &nbsp; &rarr;</button>
                 </div>
 
                 {/* Home img  */}
@@ -67,7 +67,7 @@ const Home = () => {
                 <p>AGRISA Interactive Trainings is a dynamic learning design and facilitation company founded by Karthik K. Swami, with the mission of transforming traditional training spaces into arenas of discovery, dialogue, and development.</p>
                 <p>Established in 2020, AGRISA was born out of Karthik’s passion for creating immersive, game-based learning experiences that move beyond PowerPoint slides and theory-driven workshops.</p>
                 <p>The company specializes in experiential training, where learning is not just taught but lived through activities, simulations, and deeply engaging experiences.</p>
-                <button onClick={() => navigate("/about")} >Read our fully story &nbsp; &rarr;</button>
+                <button className="btn-outline-premium" onClick={() => navigate("/about")} >Read our full story &nbsp; &rarr;</button>
             </div>
 
             {/* Home founder  */}
@@ -78,7 +78,7 @@ const Home = () => {
                 <p>Karthik K. Swami is a seasoned experiential facilitator, trainer, coach, and game designer, with over 19 years of professional experience and 12+ years dedicated to training and facilitation.</p>
                 <p>Known for his ability to transform conventional workshops into immersive human experiences, Karthik has earned recognition as a leading voice in game-based learning and experiential education in India.</p>
                 <p>Karthik’s journey into facilitation began in the corporate world, where he worked in Sales and Pre-Sales Management in the IT infrastructure sector. His early career equipped him with a strong foundation in business acumen, negotiation, and leadership.</p>
-                <button onClick={() => navigate("/about")} > Learn More about Karthik &nbsp; &rarr;</button>
+                <button className="btn-outline-premium" onClick={() => navigate("/about")} > Learn More about Karthik &nbsp; &rarr;</button>
             </div>
 
             {/* homefounderimg  */}
@@ -109,7 +109,7 @@ const Home = () => {
             </div>
 
             <div className="homeservicebtn">
-                <button onClick={() => navigate("/work")} >Explore Our Service &nbsp; &rarr;</button>
+                <button className="btn-premium" onClick={() => navigate("/work")} >Explore Our Service &nbsp; &rarr;</button>
             </div>
 
             <div className="homevideo">
@@ -120,8 +120,8 @@ const Home = () => {
                 <h1>Ready to transform your Organization</h1>
                 <p>At AGRISA Interactive Trainings, we believe true transformation happens when learning is not just heard but experienced. With game-based workshops, immersive simulations, and people-centered facilitation, we help organizations break silos, strengthen leadership, and build resilient, high-performing teams.</p>
                 <div className="homefooter-btn">
-                    <button onClick={() => navigate("/Contact")} >Get Started Today &nbsp; &rarr; </button>
-                    <button onClick={() => navigate("/work")}>View Our Work</button>
+                    <button className="btn-premium" onClick={() => navigate("/Contact")} >Get Started Today &nbsp; &rarr; </button>
+                    <button className="btn-outline-premium" onClick={() => navigate("/work")}>View Our Work</button>
                 </div>
             </div>
 
