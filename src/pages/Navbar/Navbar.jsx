@@ -78,7 +78,7 @@ const Navbar = () => {
                 )}
 
                 <div className="navdownload">
-                    <a href="https://drive.google.com/file/d/1agr_5zZrtS-5GaTBnyZ3gvVDB5pQa2V6/view?usp=drive_link">Download Profile</a>
+                    <Link to="/profile">View Profile</Link>
                 </div>
             </div>
 

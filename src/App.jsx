@@ -12,6 +12,7 @@ import Public from "./pages/Publicwork/public";
 import ScrollToTop from "./component/scrolltop";
 import Privacy from "./component/privacy";
 import Terms from "./component/terms";
+import Profile from "./pages/Profile/Profile";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/work" element={<Work />} />
           <Route path="/corporate" element={<Corporate />} />
           <Route path="/public" element={<Public />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/terms" element={<Terms/>}/>
           <Route path="/privacy" element={<Privacy/>} />
         </Routes>
