@@ -1,9 +1,11 @@
+<!-- Updated: 2026-03-27T14:40:00 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ManTalks – A safe, anonymous space for men to share, listen, and connect. One-on-one peer support sessions in English and Tamil. Not therapy. Just humanity." />
+  <meta name="description" content="ManTalks – A safe, anonymous space for men to share, listen, and connect. One-on-one peer support sessions in English and Tamil and Hindi.
+ Not therapy. Just humanity." />
   <meta name="theme-color" content="#0a0a14" />
   <title>ManTalks — A Brotherhood of Listening</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,8 +19,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">
-        <span class="logo-icon">◎</span>
-        <span class="logo-text">ManTalks</span>
+        <img src="logo.png" alt="ManTalks Logo" class="logo-img" />
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -74,12 +75,8 @@
         <div class="ring ring-1"></div>
         <div class="ring ring-2"></div>
         <div class="ring ring-3"></div>
-        <div class="inner-icon" id="heroCarousel">
-          <img src="https://www.agrisa.co.in/assets/pro2-XbHl214G.jpg" alt="Workshop 1" class="hero-carousel-img active" />
-          <img src="https://www.agrisa.co.in/assets/pro4-Bn99UTpy.jpg" alt="Workshop 2" class="hero-carousel-img" />
-          <img src="https://www.agrisa.co.in/assets/proreal-H5PBP8JL.jpg" alt="Workshop 3" class="hero-carousel-img" />
-          <img src="https://www.agrisa.co.in/assets/pro10-Bmyh6cRv.jpg" alt="Workshop 4" class="hero-carousel-img" />
-          <img src="https://www.agrisa.co.in/assets/pro9-gynBdAS9.jpg" alt="Workshop 5" class="hero-carousel-img" />
+        <div class="inner-icon">
+          <img src="hero-man.png" alt="Man reflecting" class="hero-carousel-img active" />
         </div>
       </div>
       <div class="floating-cards">
@@ -130,7 +127,8 @@
           <p>
             Stress, loneliness, doubts, or quiet struggles — they rarely find a safe outlet. ManTalks
             creates a <strong>confidential, judgment-free space</strong> where men can connect anonymously,
-            in <strong>English or Tamil</strong>, to share what's on their minds.
+            in <strong>English, Tamil and Hindi
+</strong>, to share what's on their minds.
           </p>
           <div class="about-image reveal">
             <img src="https://www.agrisa.co.in/assets/pro4-Bn99UTpy.jpg" alt="Supportive Group" class="about-img" />
@@ -149,7 +147,8 @@
           <div class="a-card">
             <div class="a-icon">🌏</div>
             <h3>Bilingual</h3>
-            <p>Sessions available in English and Tamil, with more languages coming soon.</p>
+            <p>Sessions available in English and Tamil, with Hindi selection available.
+</p>
           </div>
           <div class="a-card">
             <div class="a-icon">👥</div>
@@ -296,20 +295,22 @@
       
       <form class="join-form" id="joinForm" novalidate>
         <div class="form-row">
-          <div class="form-group">
+          <div class="form-group full-width">
             <label for="display-name">Your Name</label>
             <input type="text" id="display-name" name="displayName" placeholder="e.g. Karthik" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone" placeholder="e.g. +91 98765 43210" required />
           </div>
+        </div>
+        <div class="form-row">
           <div class="form-group">
             <label for="language">Preferred Language</label>
             <select id="language" name="language" required>
@@ -317,11 +318,8 @@
               <option value="english">English</option>
               <option value="tamil">Tamil</option>
               <option value="hindi">Hindi</option>
-              <option value="both">Either / Both</option>
             </select>
           </div>
-        </div>
-        <div class="form-row">
           <div class="form-group">
             <label for="session-type">Session Type</label>
             <select id="session-type" name="sessionType" required>
@@ -330,6 +328,12 @@
               <option value="advice">I'd like peer advice</option>
               <option value="listen">I just want to connect</option>
             </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required />
           </div>
           <div class="form-group">
             <label for="time-pref">Preferred Time Slot</label>
@@ -367,8 +371,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-logo">
-        <span class="logo-icon">◎</span>
-        <span class="logo-text">ManTalks</span>
+        <img src="logo.png" alt="ManTalks Logo" class="logo-img" />
       </div>
       <div class="footer-taglines">
         <span>"Every man deserves to be heard."</span>
